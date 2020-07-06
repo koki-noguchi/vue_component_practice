@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Component Tutorial</title>
+</head>
+<body>
+  <div id="app">
+    <h1>数当てゲーム</h1>
+    <number-guess
+      @start="onStart"
+      @collect="onCollect"
+      @lower="onLower"
+      @higher="onHigher"
+      @lose="onLose"
+    ></number-guess>
+    <p>{{ message }}</p>
+    <p>残り：{{ tryCountLeft }}回</p>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
